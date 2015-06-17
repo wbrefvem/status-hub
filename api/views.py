@@ -1,18 +1,22 @@
 from rest_framework import viewsets
 from status import models
-from api import serializers
+from api import serializers, renderers
 
 
-class ContactViewSet(viewsets.ModelViewSet):
+class BaseViewSet(viewsets.ModelViewSet):
+    renderer_classes = (renderers.JSONRenderer,)
+
+
+class ContactViewSet(BaseViewSet):
     queryset = models.Contact.objects.all()
     serializer_class = serializers.ContactSerializer
 
 
-class DepartmentViewSet(viewsets.ModelViewSet):
+class DepartmentViewSet(BaseViewSet):
     queryset = models.Department.objects.all()
     serializer_class = serializers.DepartmentSerializer
 
 
-class StatusViewSet(viewsets.ModelViewSet):
+class StatusViewSet(BaseViewSet):
     queryset = models.Status.objects.all()
     serializer_class = serializers.StatusSerializer
