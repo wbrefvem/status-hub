@@ -1,1 +1,1 @@
-# status-hub
+# Status Hub API server
