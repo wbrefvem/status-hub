@@ -3,9 +3,7 @@ from rest_framework import routers
 from api import views
 
 
-router = routers.DefaultRouter()
-router.register(r'contacts', views.ContactViewSet)
-router.register(r'departments', views.DepartmentViewSet)
+router = routers.DefaultRouter(trailing_slash=False)
 router.register(r'statuses', views.StatusViewSet)
 
 urlpatterns = [
