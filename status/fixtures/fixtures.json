@@ -1,0 +1,24 @@
+[
+    {
+        "pk": 1,
+        "model": "status.status",
+        "fields": {
+            "title": "Default Title",
+            "description": "Default Description",
+            "start_date": "2014-12-01T12:00:00Z",
+            "end_date": "2015-06-23T12:00:00Z"            
+        }
+
+    },
+    {
+        "pk": 2,
+        "model": "status.status",
+        "fields": {
+            "title": "Seond Title",
+            "description": "Second Description",
+            "start_date": "2015-06-12T17:47:13.950829Z",
+            "end_date": "2015-06-26T17:47:24.019206Z"            
+        }
+
+    }
+]
