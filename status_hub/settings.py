@@ -33,6 +33,8 @@ CORS_ORIGIN_WHITELIST = (
 
 CORS_ORIGIN_ALLOW_ALL = True
 
+BROKER_URL = 'amqp://guest:guest@localhost:5672//'
+
 
 # Application definition
 
