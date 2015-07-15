@@ -1,1 +1,1 @@
-web: gunicorn conferenceroom.wsgi --log-file -
+web: gunicorn status_hub.wsgi --log-file -
