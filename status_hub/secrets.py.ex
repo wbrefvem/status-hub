@@ -1,2 +1,0 @@
-CELERY_USER = ''
-CELERY_PASSWORD = ''

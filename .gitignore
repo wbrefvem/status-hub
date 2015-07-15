@@ -60,5 +60,5 @@ target/
 # SQLite
 *.sqlite3
 
-# Celery
 secrets.py
+
