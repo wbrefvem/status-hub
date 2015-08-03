@@ -12,11 +12,3 @@ app = Celery('status_hub')
 
 app.config_from_object('django.conf:settings')
 app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
-
-
-
-
-@app.task()
-def add(x, y):
-    print "You're soooooooo good looking"
-    return x + y
