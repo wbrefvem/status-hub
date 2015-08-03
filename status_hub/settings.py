@@ -35,7 +35,7 @@ CORS_ORIGIN_WHITELIST = (
 
 CORS_ORIGIN_ALLOW_ALL = True
 
-BROKER_URL = 'amqp://%s:%s@localhost:5672/celery_vhost' % (CELERY_USER, CELERY_PASSWORD)
+BROKER_URL = 'amqp://%s:%s@owl.rmq.cloudamqp.com/qetnoute' % (RABBITMQ_USER, RABBITMQ_PASSWORD)
 
 
 # Application definition
