@@ -16,7 +16,7 @@ app.autodiscover_tasks(lambda: settings.INSTALLED_APPS)
 
 
 
-@app.task(bind=True)
+@app.task()
 def add(x, y):
     print "You're soooooooo good looking"
     return x + y
