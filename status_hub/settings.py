@@ -12,7 +12,12 @@ https://docs.djangoproject.com/en/1.8/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
-from secrets import *
+#from secrets import *
+
+RABBITMQ_USER = ''
+RABBITMQ_PASSWORD = ''
+STATUSHUB_USER = ''
+STATUSHUB_PASSWORD = ''
 
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
