@@ -6,3 +6,10 @@ class StatusSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = models.Status
+
+
+class DestinationSerializer(serializers.ModelSerializer):
+
+    class Meta:
+        model = models.Destination
+        fields = ('id', 'name')
